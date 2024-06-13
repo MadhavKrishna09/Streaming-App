@@ -1,0 +1,7 @@
+{
+    "watch": ["src"],
+    "ignore": ["node_modules"],
+    "delay": "500ms",
+    "ext": "js,json"
+  }
+  
