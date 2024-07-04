@@ -183,7 +183,7 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
   }
 });
 
-const updatePassword = asyncHandler(async (req, res) => {
+const changeCurrentPassword = asyncHandler(async (req, res) => {
   const { oldPassword, newPassword } = req.body;
   if (oldPassword === newPassword) {
     throw new ApiError(400, "New password must be different from old password");
@@ -418,7 +418,7 @@ export {
   loginUser,
   logoutUser,
   refreshAccessToken,
-  updatePassword,
+  changeCurrentPassword,
   getCurrentUser,
   updateAccountDetails,
   updateUserAvatar,
